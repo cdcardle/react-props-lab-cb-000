@@ -12,10 +12,10 @@ export default class Spaceship extends React.Component {
             <th>Colors</th>
           </tr>
           <tr>
-            <td>{this.prop.name}</td>
-            <td>{this.prop.speed}</td>
-            <td>{this.prop.hasRockets}</td>
-            <td>{this.prop.colors}</td>
+            <td>{ this.prop.name }</td>
+            <td>{ this.prop.speed || "slow"}</td>
+            <td>{ this.prop.hasRockets || false }</td>
+            <td>{ this.prop.colors || ['black', 'red'] }</td>
           </tr>
         </table>
       </div>
